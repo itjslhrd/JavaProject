@@ -2,7 +2,11 @@
 public class Exam_07 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		int a=1, b=2;
+		
+		// a<b+2<<1<=b
+		
+		//a <8 <= b
 
 	}
 
