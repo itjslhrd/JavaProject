@@ -15,14 +15,14 @@ public class OracleExam_01 {
 			
 			//3. 명령문 수행
 			stmt = conn.createStatement();
-			rs = stmt.executeQuery("SELECT ENO, ENAME, HIREDATE, SALARY FROM EMP");
+			rs = stmt.executeQuery("SELECT ENO, ENAME, HIREDATE, SALARY*10 FROM EMP");
 			
 			//4. 결과 출력
 			while(rs.next()) {
 				System.out.print(rs.getInt("eno") + "\t");
 				System.out.print(rs.getString("ename") + "\t");
 				System.out.print(rs.getString("hiredate") + "\t");
-				System.out.print(rs.getInt("salary") + "\n");
+				System.out.print(rs.getInt("salary*10") + "\n");
 			}
 			
 		}catch(Exception e) {
